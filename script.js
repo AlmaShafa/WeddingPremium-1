@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    // --- 0. Menangani Nama Tamu dari URL ---
+const urlParams = new URLSearchParams(window.location.search);
+const guestName = urlParams.get('to'); // Mengambil data dari ?to=NamaTamu
+
+const elGuest = document.getElementById('guest-name');
+
+// Jika ada parameter 'to' di URL, maka ganti teksnya
+if (elGuest && guestName) {
+    elGuest.innerText = guestName.replace(/_/g, ' '); // Mengganti underscore dengan spasi
+}
     
     // --- 1. UI Toggle (Buka Undangan & Musik) ---
     const btnOpen = document.getElementById('openInvitation');
