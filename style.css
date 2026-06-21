@@ -32,7 +32,7 @@ body {
     line-height: 1.6; 
     display: flex; 
     justify-content: flex-end; 
-    height: 100vh; 
+    height: 100dvh; 
     overflow: hidden; 
 }
 
@@ -54,7 +54,7 @@ body {
 
 /* --- BAGIAN KANAN: Mobile Container --- */
 .mobile-container {
-    width: 100%; max-width: 480px; height: 100vh;
+    width: 100%; max-width: 480px; height: 100dvh;
     background: var(--bg-gradient); /* Tetap jadikan gradient sebagai fallback jika gambar gagal dimuat */
     background-size: cover;          /* Gambar otomatis memenuhi layar container */
     background-position: center;     /* Gambar selalu berada di tengah */
@@ -77,10 +77,10 @@ main { position: relative; width: 100%; min-height: 100%; }
     transition: transform 0.8s ease-in-out, opacity 0.8s;
 }
 .cover-overlay::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 1; }
-.cover-content, .cover-bottom { position: relative; z-index: 2; text-align: center; padding: 40px 20px; }
+.cover-content, .cover-bottom { position: relative; z-index: 2; text-align: center; padding: 20px 20px 30px 20px; }
 .cover-title { font-family: var(--font-body); font-size: 14px; letter-spacing: 3px; margin-bottom: 10px; }
 .cover-names { font-family: var(--font-script); font-size: 48px; margin-bottom: 10px; }
-.guest-card { background: var(--card-bg); color: var(--text-dark); padding: 20px; border-radius: 12px; width: 90%; max-width: 400px; backdrop-filter: blur(8px); }
+.guest-card { background: var(--card-bg); color: var(--text-dark); padding: 20px; border-radius: 12px; margin: 0 auto; width: 90%; max-width: 380px; backdrop-filter: blur(8px); }
 .guest-card p { font-size: 14px; font-weight: 600; margin-bottom: 15px; }
 
 /* Buttons */
