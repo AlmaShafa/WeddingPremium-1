@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Mengunci tinggi layar HP agar pas dan background tidak membesar/mengecil saat di-scroll
+    function pasangTinggiMobile() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    pasangTinggiMobile();
+    // Hanya hitung ulang jika HP diputar (landscape/portrait), bukan saat di-scroll
+    window.addEventListener('orientationchange', pasangTinggiMobile);
 
     // --- 0. Menangani Nama Tamu dari URL ---
     const urlParams = new URLSearchParams(window.location.search);
