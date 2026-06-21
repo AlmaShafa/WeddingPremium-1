@@ -54,16 +54,30 @@ body {
 
 /* --- BAGIAN KANAN: Mobile Container --- */
 .mobile-container {
-    width: 100%; max-width: 480px; height: 100dvh;
-    background: var(--bg-gradient); /* Tetap jadikan gradient sebagai fallback jika gambar gagal dimuat */
-    background-size: cover;          /* Gambar otomatis memenuhi layar container */
-    background-position: center;     /* Gambar selalu berada di tengah */
-    background-repeat: no-repeat;    /* Mencegah gambar berulang */
-    background-attachment: scroll;   /* Background ikut bergeser saat di-scroll */
+    width: 100%; 
+    max-width: 480px; 
+    height: 100dvh;
     position: relative;
-    overflow-y: auto; overflow-x: hidden;
+    overflow-y: auto; 
+    overflow-x: hidden;
     box-shadow: -10px 0 20px rgba(0,0,0,0.2);
-    
+}
+
+.mobile-container::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100dvh; 
+    margin-bottom: -100dvh; 
+    background: var(--bg-gradient); 
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    z-index: -1; 
+    pointer-events: none; 
 }
 
 main { position: relative; width: 100%; min-height: 100%; }
@@ -193,7 +207,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 #rsvp-form { margin-top: 15px; }
 #rsvp-form input, #rsvp-form select, #rsvp-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: var(--font-body); font-size: 13px; background: #fdfdfd; }
 #rsvp-form textarea { resize: vertical; }
-.submit-btn {display: block; width: 100%; padding: 12px 25 px; border-radius: 8px; font-size: 13px; margin-left: auto; }
+.submit-btn {display: block; width: 100%; padding: 15px; border-radius: 8px; font-size: 13px; margin-left: auto; }
 .wishes-list { margin-top: 10px; text-align: left; max-height: 300px; overflow-y: auto; }
 .wish-item { background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 3px solid var(--btn-color); }
 .wish-item h4 { font-size: 14px; margin-bottom: 5px; font-weight: 600;}
