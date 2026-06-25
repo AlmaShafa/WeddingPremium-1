@@ -21,7 +21,7 @@
     "pesan": "Saksikan momen kebahagiaan kami secara langsung melalui live streaming berikut:",
     "url": "https://www.youtube.com/embed/ScMzIvxBSi4"
   },
-  "backgroundMobile": "https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "backgroundMobile": "https://images.unsplash.com/photo-1516617442634-75371039cb3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "gallery": [
     { "type": "video", "url": "https://www.youtube.com/embed/ScMzIvxBSi4" },
     { "type": "image", "url": "https://picsum.photos/400/600?random=2", "orientation": "portrait" },
