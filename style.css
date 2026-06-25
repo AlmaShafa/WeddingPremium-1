@@ -28,7 +28,7 @@
 body { 
     font-family: var(--font-body); 
     background: #e9ecef; 
-    color: var(--text-light); 
+    color: var(--text-dark); 
     line-height: 1.6; 
     display: flex; 
     justify-content: flex-end; 
@@ -87,7 +87,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 .cover-content, .cover-bottom { position: relative; z-index: 2; text-align: center; padding: 50px 20px 30px 20px; }
 .cover-title { font-family: var(--font-body); font-size: 14px; letter-spacing: 3px; margin-bottom: 10px; }
 .cover-names { font-family: var(--font-script); font-size: 48px; margin-bottom: 10px; }
-.guest-card { background: var(--card-bg); color: var(--text-dark); padding: 20px; border-radius: 12px; margin: 0 auto; width: 90%; max-width: 380px; backdrop-filter: blur(8px); }
+.guest-card { background: var(--card-bg); color: var(--text-dark); padding: 20px; border-radius: 25px; margin: 0 auto; width: 90%; max-width: 380px; backdrop-filter: blur(8px); }
 .guest-card p { font-size: 14px; font-weight: 600; margin-bottom: 15px; }
 
 /* Buttons */
