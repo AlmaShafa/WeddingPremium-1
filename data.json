@@ -4,13 +4,13 @@
       "namaPanggilan": "Fatimah",
       "namaLengkap": "Fatimah Az Zahra",
       "namaOrangTua": "Putri dari Bapak Fulan & Ibu Fulanah",
-      "foto": "https://picsum.photos/400/600?random=11"
+      "foto": "image/Wanita.png"
     },
     "pria": {
       "namaPanggilan": "Ali",
       "namaLengkap": "Ali Rajab",
       "namaOrangTua": "Putra dari Bapak Fulan & Ibu Fulanah",
-      "foto": "https://picsum.photos/400/600?random=12"
+      "foto": "image/Pria (2).png"
     }
   },
   "acara": {
