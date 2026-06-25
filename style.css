@@ -7,9 +7,9 @@
     --text-light: #ffffff;
     --btn-color: #c55f00;
     --btn-hover: #9f9700;
-    --font-heading: 'Cormorant Garamond', serif;
+    --font-heading: 'Comfortaa', sans-serif
     --font-body: 'Montserrat', sans-serif;
-    --font-script: 'Great Vibes', cursive;
+    --font-script: 'Dancing Script', cursive;
 }
 
 /* Reset & Flex Body Layout */
