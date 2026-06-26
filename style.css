@@ -364,3 +364,13 @@ main { position: relative; width: 100%; min-height: 100%; }
     line-height: 1.6;
     opacity: 0.9;
 }
+/* --- ANIMASI DELAY UNTUK GALLERY GRID --- */
+.gallery-grid img.reveal:nth-child(even) {
+    transition-delay: 0.2s; /* Gambar di kolom kanan (genap) akan muncul sedikit lebih lambat */
+}
+.gallery-grid img.reveal:nth-child(odd) {
+    transition-delay: 0.1s; /* Gambar di kolom kiri (ganjil) muncul lebih dulu */
+}
+.gallery-grid .video-item.reveal {
+    transition-delay: 0.1s;
+}
