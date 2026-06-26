@@ -49,73 +49,90 @@
                     <h3>The Wedding Of</h3>
                     <h1 id="intro-names">Nama & Nama</h1>
                     <p id="intro-date">Tanggal Acara</p>
-                    <i class="fa-solid fa-chevron-down arrow-down bounce"></i>
-                    <i class="fa-solid fa-chevron-down arrow-down bounce"></i>
-                    <i class="fa-solid fa-chevron-down arrow-down bounce"></i>
+                    <i class="fa-solid fa-chevron-down arrow-down bounce"></i><i class="fa-solid fa-chevron-down arrow-down bounce"></i><i class="fa-solid fa-chevron-down arrow-down bounce"></i>
                 </div>
-                <div class="quote">
-                    <i class="fa-solid fa-leaf leaf-icon"></i>
-                    <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri..."</p>
-                    <span>QS. Ar-Rum Ayat 21</span>
+                
+                <div class="card-container quote-card">
+                    <div class="quote">
+                        <i class="fa-solid fa-leaf leaf-icon"></i>
+                        <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri..."</p>
+                        <span>QS. Ar-Rum Ayat 21</span>
+                    </div>
                 </div>
             </section>
 
             <section class="section couple animate-on-scroll">
-                <h3 class="salam">Assalamu'alaikum Warahmatullaahi Wabarakaatuh</h3>
-                <p class="doa-text">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami.</p>
-                
-                <div class="person animate-on-scroll">
-                    <div class="arch-image">
-                        <img id="foto-wanita" src="https://picsum.photos/400/600?random=11" alt="Bride">
-                        <h2 class="signature-name" id="nick-wanita">Nama Wanita</h2>
+                <div class="card-container">
+                    <h3 class="salam">Assalamu'alaikum Warahmatullaahi Wabarakaatuh</h3>
+                    <p class="doa-text">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami.</p>
+                    
+                    <div class="person animate-on-scroll">
+                        <div class="arch-image">
+                            <img id="foto-wanita" src="https://picsum.photos/400/600?random=11" alt="Bride">
+                            <h2 class="signature-name" id="nick-wanita">Nama Wanita</h2>
+                        </div>
+                        <h2 id="full-wanita">Nama Lengkap Wanita</h2>
+                        <p id="ortu-wanita">Putri dari Bapak & Ibu</p>
+                        <a href="#" class="ig-btn"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <h2 id="full-wanita">Nama Lengkap Wanita</h2>
-                    <p id="ortu-wanita">Putri dari Bapak & Ibu</p>
-                    <a href="#" class="ig-btn"><i class="fa-brands fa-instagram"></i></a>
+
+                    <div class="ampersand animate-on-scroll">&</div>
+
+                    <div class="person animate-on-scroll">
+                        <div class="arch-image">
+                            <img id="foto-pria" src="https://picsum.photos/400/600?random=12" alt="Groom">
+                            <h2 class="signature-name" id="nick-pria">Nama Pria</h2>
+                        </div>
+                        <h2 id="full-pria">Nama Lengkap Pria</h2>
+                        <p id="ortu-pria">Putra dari Bapak & Ibu</p>
+                        <a href="#" class="ig-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
+            </section>
 
-                <div class="ampersand animate-on-scroll">&</div>
-
-                <div class="person animate-on-scroll">
-                    <div class="arch-image">
-                        <img id="foto-pria" src="https://picsum.photos/400/600?random=12" alt="Groom">
-                        <h2 class="signature-name" id="nick-pria">Nama Pria</h2>
+            <!-- SECTION OUR STORY (Ditambah card-bg & animasi reveal) -->
+            <section class="section our-story reveal">
+                <div class="card-container">
+                    <h1 class="section-title">Our Story</h1>
+                    
+                    <!-- Container untuk timeline cerita yang akan dirender oleh JS -->
+                    <div id="story-container" class="story-timeline">
+                        <!-- Konten dari data.json akan masuk ke sini -->
                     </div>
-                    <h2 id="full-pria">Nama Lengkap Pria</h2>
-                    <p id="ortu-pria">Putra dari Bapak & Ibu</p>
-                    <a href="#" class="ig-btn"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </section>
 
             <section class="section save-the-date reveal">
-                <h1 class="section-title">SAVE THE DATE</h1>
-                
-                <div class="countdown" id="countdown">
-                    <div class="time-box"><span id="days">00</span><p>Hari</p></div>
-                    <div class="time-box"><span id="hours">00</span><p>Jam</p></div>
-                    <div class="time-box"><span id="minutes">00</span><p>Menit</p></div>
-                    <div class="time-box"><span id="seconds">00</span><p>Detik</p></div>
-                </div>
-
-                <p class="doa-text">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami pada:</p>
-
-                <div class="event-card-container">
-                    <div class="event-card">
-                        <i class="fa-solid fa-rings event-icon"></i>
-                        <h2>Akad Nikah</h2>
-                        <p class="date event-date-text">TANGGAL ACARA</p>
-                        <p class="time">08.00 - 10.00 WIB</p>
-                        <p class="venue"><strong>Auditorium Masjid</strong><br>Jalan Raya Bojongsari No.5, Bogor</p>
-                        <a href="#" class="btn-location"><i class="fa-solid fa-paper-plane"></i> Lihat Lokasi</a>
-                    </div>
+                <div class="card-container">
+                    <h1 class="section-title">SAVE THE DATE</h1>
                     
-                    <div class="event-card">
-                        <i class="fa-solid fa-bouquet event-icon"></i>
-                        <h2>Resepsi</h2>
-                        <p class="date event-date-text">TANGGAL ACARA</p>
-                        <p class="time">11.00 - Selesai WIB</p>
-                        <p class="venue"><strong>Auditorium Masjid</strong><br>Jalan Raya Bojongsari No.5, Bogor</p>
-                        <a href="#" class="btn-location"><i class="fa-solid fa-paper-plane"></i> Lihat Lokasi</a>
+                    <div class="countdown" id="countdown">
+                        <div class="time-box"><span id="days">00</span><p>Hari</p></div>
+                        <div class="time-box"><span id="hours">00</span><p>Jam</p></div>
+                        <div class="time-box"><span id="minutes">00</span><p>Menit</p></div>
+                        <div class="time-box"><span id="seconds">00</span><p>Detik</p></div>
+                    </div>
+
+                    <p class="doa-text">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami pada:</p>
+
+                    <div class="event-card-container" style="background: transparent; padding: 0; box-shadow: none; margin-top: 20px;">
+                        <div class="event-card">
+                            <i class="fa-solid fa-rings event-icon"></i>
+                            <h2>Akad Nikah</h2>
+                            <p class="date event-date-text">TANGGAL ACARA</p>
+                            <p class="time">08.00 - 10.00 WIB</p>
+                            <p class="venue"><strong>Auditorium Masjid</strong><br>Jalan Raya Bojongsari No.5, Bogor</p>
+                            <a href="#" class="btn-location"><i class="fa-solid fa-paper-plane"></i> Lihat Lokasi</a>
+                        </div>
+                        
+                        <div class="event-card">
+                            <i class="fa-solid fa-bouquet event-icon"></i>
+                            <h2>Resepsi</h2>
+                            <p class="date event-date-text">TANGGAL ACARA</p>
+                            <p class="time">11.00 - Selesai WIB</p>
+                            <p class="venue"><strong>Auditorium Masjid</strong><br>Jalan Raya Bojongsari No.5, Bogor</p>
+                            <a href="#" class="btn-location"><i class="fa-solid fa-paper-plane"></i> Lihat Lokasi</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -133,14 +150,17 @@
                 </div>
             </section>
 
+            <!-- 4. SECTION GALLERY (Ditambah card-bg) -->
             <section class="section gallery animate-on-scroll">
-                <h1 class="section-title">Our Gallery</h1>
-                
-                <div class="gallery-box animate-on-scroll">
+                <div class="card-container">
+                    <h1 class="section-title">Our Gallery</h1>
                     
-                    <div id="gallery-container" class="gallery-grid">
+                    <!-- Class .gallery-box diganti menjadi div biasa dengan margin-top agar tidak double background -->
+                    <div style="margin-top: 20px;">
+                        <div id="gallery-container" class="gallery-grid">
+                            <!-- Konten gambar akan dimuat di sini oleh JS -->
                         </div>
-                    
+                    </div>
                 </div>
             </section>
 
@@ -155,38 +175,43 @@
                 </div>
             </section>
 
+            <!-- 5. SECTION WISHES / RSVP (Ditambah card-bg) -->
             <section class="section rsvp reveal">
-                <h1 class="section-title">Wishes</h1>
-                <p style="margin-bottom: 10px;">Ucapan Selamat & Do'a</p>
-                
-                <div class="rsvp-card">
-                    <div class="ucapan-header" id="toggle-wishes" style="cursor: pointer; justify-content: center;">
-                        <p class="ucapan-count"><i class="fa-solid fa-comments"></i> <span id="count-wishes">0</span> Ucapan</p>
-                    </div>
+                <div class="card-container">
+                    <h1 class="section-title">Wishes</h1>
+                    <p style="margin-bottom: 20px;">Ucapan Selamat & Do'a</p>
                     
-                    <div id="wishes-container" class="hidden">
-                        <form id="rsvp-form" name="submit-to-google-sheet">
-                            <input type="text" id="name" name="nama" placeholder="Tamu Undangan" required>
-                            
-                            <select id="attendance" name="kehadiran" required>
-                                <option value="" disabled selected>Konfirmasi Kehadiran</option>
-                                <option value="Hadir">Hadir</option>
-                                <option value="Tidak Hadir">Tidak Hadir</option>
-                            </select>
+                    <!-- Background dan padding pada rsvp-card dinetralkan (transparent) -->
+                    <div class="rsvp-card" style="background: transparent; padding: 0; box-shadow: none;">
+                        <div class="ucapan-header" id="toggle-wishes" style="cursor: pointer; justify-content: center;">
+                            <p class="ucapan-count"><i class="fa-solid fa-comments"></i> <span id="count-wishes">0</span> Ucapan</p>
+                        </div>
+                        
+                        <div id="wishes-container" class="hidden">
+                            <form id="rsvp-form" name="submit-to-google-sheet">
+                                <input type="text" id="name" name="nama" placeholder="Tamu Undangan" required>
+                                
+                                <select id="attendance" name="kehadiran" required>
+                                    <option value="" disabled selected>Konfirmasi Kehadiran</option>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Tidak Hadir">Tidak Hadir</option>
+                                </select>
 
-                            <select id="jumlah" name="jumlah" required>
-                                <option value="" disabled selected>Jumlah Kehadiran</option>
-                                <option value="1">1 Orang</option>
-                                <option value="2">2 Orang</option>
-                                <option value="3">3 Orang</option>
-                                <option value="4">4 Orang</option>
-                            </select>
+                                <select id="jumlah" name="jumlah" required>
+                                    <option value="" disabled selected>Jumlah Kehadiran</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3">3 Orang</option>
+                                    <option value="4">4 Orang</option>
+                                </select>
 
-                            <textarea id="message" name="pesan" rows="4" placeholder="Tulis ucapan" maxlength="300" required></textarea>
-                            <button type="submit" id="btn-submit" class="btn-primary submit-btn">Kirim Ucapan</button>
-                        </form>
+                                <textarea id="message" name="pesan" rows="4" placeholder="Tulis ucapan" maxlength="300" required></textarea>
+                                <button type="submit" id="btn-submit" class="btn-primary submit-btn">Kirim Ucapan</button>
+                            </form>
 
-                        <div id="wishes-list" class="wishes-list">
+                            <div id="wishes-list" class="wishes-list">
+                                <!-- Daftar ucapan akan dimuat di sini -->
+                            </div>
                         </div>
                     </div>
                 </div>
