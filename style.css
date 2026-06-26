@@ -2,7 +2,7 @@
 :root {
     --bg-color: #964d08;
     --bg-gradient: linear-gradient(180deg, #fefefe 0%, #ffffff 100%);
-    --card-bg: #f4a5a5db;
+    --card-bg: #f4a5a554;
     --text-dark: #000000f6;
     --text-light: #ffffff;
     --btn-color: #861429;
@@ -108,7 +108,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 
 /* Typography & Sections */
 .section-title { font-family: var(--font-body); font-size: 30px; text-align: center; margin-bottom: 5px; }
-.section { padding: 60px 20px; text-align: center; }
+.section { padding: 30px 20px; text-align: center; }
 
 /* 4. ANIMASI SCROLL (REVEAL) */
 .reveal {
@@ -120,6 +120,10 @@ main { position: relative; width: 100%; min-height: 100%; }
     opacity: 1;
     transform: translateY(0);
 }
+/* Sedikit jeda (delay) antar item cerita agar munculnya bergantian (opsional) */
+.story-item:nth-child(1) { transition-delay: 0.1s; }
+.story-item:nth-child(2) { transition-delay: 0.2s; }
+.story-item:nth-child(3) { transition-delay: 0.3s; }
 
 /* Intro */
 .intro { padding-top: 80px; }
@@ -149,7 +153,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 .event-card h2 { font-family: var(--font-heading); margin: 15px 0; font-size: 26px; }
 .event-icon { font-size: 30px; color: var(--text-dark); }
 .event-card .date { font-weight: 600; font-size: 14px; margin-bottom: 5px; }
-.event-card .time, .event-card .venue { font-size: 13px; margin-bottom: 15px; }
+.event-card .time, .event-card .venue { font-size: 14px; margin-bottom: 12px; }
 
 /* Styling Tombol Lihat Lokasi */
 .btn-location {
@@ -182,7 +186,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 
 /* Gifts & RSVP */
 .gift-container, .rsvp-card { background: var(--card-bg); color: var(--text-dark); padding: 40px 20px; border-radius: 15px; }
-.gift-container p { font-size: 13px; margin-bottom: 20px; }
+.gift-container p { font-size: 14px; margin-bottom: 20px; }
 .gift-list { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; }
 
 .bank-card { background: linear-gradient(135deg, #e47c059e 0%, #f9d789c1 100%); border-radius: 12px; padding: 20px; position: relative; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
@@ -267,7 +271,7 @@ main { position: relative; width: 100%; min-height: 100%; }
 }
 
 .ty-quote {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.8;
     opacity: 0.9;
     max-width: 300px;
@@ -302,4 +306,61 @@ main { position: relative; width: 100%; min-height: 100%; }
     font-size: 11px;
     letter-spacing: 2px;
     opacity: 0.7;
+}
+
+/* --- KELAS TAMBAHAN UNTUK CARD BACKGROUND --- */
+.card-container {
+    background: var(--card-bg); 
+    color: var(--text-dark);
+    padding: 40px 20px; 
+    border-radius: 15px; 
+    margin-top: 30px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    backdrop-filter: blur(8px);
+}
+
+/* Mengatur ulang margin bawaan quote agar rapi di dalam card */
+.quote-card .quote {
+    margin-top: 0; 
+}
+
+/* --- OUR STORY (Timeline Style) --- */
+.story-timeline {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left; /* Teks diratakan ke kiri agar lebih nyaman dibaca */
+}
+.story-item {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--btn-color);
+}
+.story-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+}
+.story-date {
+    font-size: 11px;
+    color: var(--btn-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.story-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+.story-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
 }
