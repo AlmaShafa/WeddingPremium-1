@@ -84,7 +84,7 @@ main { position: relative; width: 100%; min-height: 100%; }
     transition: transform 0.8s ease-in-out, opacity 0.8s;
 }
 .cover-overlay::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.0); z-index: 1; }
-.cover-content, .cover-bottom { position: relative; z-index: 2; text-align: center; padding: 150px 20px 30px 20px; }
+.cover-content, .cover-bottom { position: relative; z-index: 2; text-align: center; padding: 100px 20px 30px 20px; }
 .cover-title { font-family: var(--font-body); font-size: 14px; letter-spacing: 3px; margin-bottom: 10px; }
 .cover-names { font-family: var(--font-script); font-size: 40px; margin-bottom: 10px; }
 .guest-card { background: var(--card-bg); color: var(--text-dark); padding: 20px; border-radius: 25px; margin: 0 auto; width: 90%; max-width: 380px; backdrop-filter: blur(8px); }
