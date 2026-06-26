@@ -59,5 +59,27 @@
     "pesan": "Atas kehadiran dan do'a restu dari Bapak/Ibu/Saudara/i sekalian, kami mengucapkan Terima Kasih.",
     "subJudul": "Kami Yang Berbahagia",
     "bgImage": "image/Gabungan.png"
-  }
+  },
+  "ourStory": [
+    {
+      "tanggal": "Januari 2020",
+      "judul": "Pertama Bertemu",
+      "cerita": "Semua berawal dari secangkir kopi di sebuah kafe lokal di Jakarta. Kami diperkenalkan oleh seorang teman dan tidak pernah menyangka bahwa obrolan santai sore itu akan menjadi awal dari perjalanan panjang kami berdua."
+    },
+    {
+      "tanggal": "Maret 2022",
+      "judul": "Mulai Menjalin Hubungan",
+      "cerita": "Setelah melewati berbagai obrolan seru, tawa, dan saling mendukung dalam suka maupun duka, kami memutuskan untuk meresmikan hubungan. Hari-hari selanjutnya dipenuhi dengan warna baru dan impian masa depan yang kami bangun bersama."
+    },
+    {
+      "tanggal": "Desember 2025",
+      "judul": "Lamaran",
+      "cerita": "Di bawah langit senja, dia memberikan kejutan manis dengan sebuah cincin dan sebuah pertanyaan yang mengubah hidup kami. Dengan penuh haru dan bahagia, aku menjawab, Iya."
+    },
+    {
+      "tanggal": "Juni 2026",
+      "judul": "Pernikahan",
+      "cerita": "Kini, dengan restu keluarga dan penuh rasa syukur, kami siap menapaki babak baru. Kami mengundang Anda, keluarga dan sahabat terkasih, untuk menjadi saksi cinta suci kami pada hari pernikahan kami."
+    }
+  ]
 }
