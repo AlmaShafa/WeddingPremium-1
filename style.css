@@ -393,3 +393,10 @@ main { position: relative; width: 100%; min-height: 100%; }
 .couple .person.reveal:nth-of-type(2) {
     transition-delay: 0.7s;
 }
+.ucapan-header {
+    border-bottom: 2px solid #a06b6b54; /* Garis tipis transparan */
+    padding-bottom: 15px; /* Memberikan ruang napas antara teks dan garis */
+    margin-bottom: 20px;  /* Memberikan ruang antara garis dan daftar ucapan di bawahnya */
+    display: flex;
+    justify-content: center;
+}
